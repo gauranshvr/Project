@@ -1,0 +1,253 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.App {
+  text-align: center;
+  position: relative;
+  overflow:hidden ;
+  /* background-image: url("images.jpeg"); */
+ 
+  /* background: url("clip.mp4"); */
+  height: 100vh;
+}
+ul ul{
+  list-style-type: circle;
+}
+
+.clip {
+  position: absolute; /* Position absolutely to cover the entire background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire area without distorting the aspect ratio */
+  z-index: -1; /* Place the video behind other content */
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  padding: 20px;
+  color: white;
+  display: flex;
+  /* flex-direction:right; */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+.para{
+  margin-top: 100px;
+  margin-left:50px;
+}
+
+.para h1{
+  /* color: #ebcc8f; */
+  font-size: 40px;
+  cursor: pointer;
+}
+.para h1:hover{
+  filter: drop-shadow(0 0 0.78rem rgb(236, 238, 238));
+}
+
+form {
+  /* margin: auto; */
+  margin-top: 65px;
+  margin-left: 560px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  max-width: 400px;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color:rgb(153, 144, 144);
+  filter: drop-shadow(0 0 0.98rem rgb(208, 235, 197));
+}
+
+.heading{
+  color: #f3eddc;
+}
+#heading1{
+  color: #f3eddc;
+}
+label {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input, select {
+  margin-top: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+}
+.button-in{
+  padding: 10px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+button:hover {
+  background-color: #f1d076;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+/* App.css */
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  background-color: #f1d076;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button-link1{
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.button-link1:hover{
+   background-color: #f1d076;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+#Line{
+  color: #a9a3a3;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3 , 2fr); 
+  gap: 13px; 
+  padding: 12px;
+}
+
+.grid-image {
+  width: 32vw; 
+  height: 33vh;
+  object-fit: cover;
+}
+/* .grid-image:hover{
+  filter: drop-shadow(0 0 0.98rem rgb(206, 233, 195));
+  transform:rotatey(180deg) ;
+  
+} */
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #f3eddc;
+}
+
+.order-table th, .order-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.order-table th {
+  background-color: #333;
+  color: #f3eddc;
+}
+
+.order-table tr:nth-child(even) {
+  /* background-color: #f2f2f2; */
+}
+
+
+.carousel-container {
+  width: 50vw;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+.carousel-item {
+  position: relative; /* Required for overlay positioning */
+}
+
+.image-container {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px; /* Position at the bottom */
+  left: 10px; /* Adjust as needed */
+  color: white; /* Text color */
+  background: rgba(0, 0, 0, 0.5); /* Background with opacity */
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px; /* Adjust font size */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional: text shadow for better readability */
+}
+
+.slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-dots {
+  bottom: 10px; /* Position of dots */
+}
+
+.slick-prev, .slick-next {
+  z-index: 1; /* Ensure navigation arrows are above the carousel */
+}
